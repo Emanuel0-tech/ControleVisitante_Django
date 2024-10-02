@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load widget_tweaks %}
+
 {% block conteudo%}
                     <div class="container">
                         <div class="d-sm-flex align-items-center justify-content-between mb-4">
@@ -21,7 +23,8 @@
                                        {% csrf_token %}
                                         {% for  field in form%}
                                         <div class="form-group col-md-12">
-                                            <label>{{field.label}}</label>
+                                            <label>{{field.label}}{% if field.field.required%}*{%endif%}</label>
+                                            {% render_field field placeholder=field.label class='form-control' %}
                                         </div>
                                         {% endfor %}
                                     </div>
