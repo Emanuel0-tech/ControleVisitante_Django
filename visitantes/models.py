@@ -21,10 +21,13 @@ class Visitante(models.Model):
     morador_responsavel =  models.CharField( verbose_name='Nome do morador responsavel',max_length=200,blank=False)
     registrado_por = models.ForeignKey('porteiros.Porteiro', verbose_name='Porteiro responsavel pelo registro', on_delete=models.PROTECT)
     
+<<<<<<< HEAD
     def get_horario_chegada(self):
         if self.horario_chegada:
             return self.horario_chegada
         
+=======
+>>>>>>> 259bea34cf67988f3aafeb19514fc5d39454096e
     def get_horario_saida(self):
         if self.horario_saida:
             return self.horario_saida
@@ -45,10 +48,17 @@ class Visitante(models.Model):
         if self.cpf:
             cpf = str(self.cpf)
             
+<<<<<<< HEAD
             cpf_parte_um = cpf[0:3]
             cpf_parte_dois = cpf[3:6]
             cpf_parte_tres = cpf[6:9]
             cpf_parte_quatro = cpf[9:]
+=======
+            cpf_parte_um = cpf[0:2]
+            cpf_parte_dois = cpf[3:5]
+            cpf_parte_tres = cpf[6:8]
+            cpf_parte_quatro = cpf[9:10]
+>>>>>>> 259bea34cf67988f3aafeb19514fc5d39454096e
             
             cpf_formatado = f'{cpf_parte_um}.{cpf_parte_dois}.{cpf_parte_tres}-{cpf_parte_quatro}'
             return cpf_formatado
@@ -59,4 +69,8 @@ class Visitante(models.Model):
         db_table = 'visitante'
         
     def __str__(self):
+<<<<<<< HEAD
         return self.nome_completo
+=======
+        return self.nome_completo
+>>>>>>> 259bea34cf67988f3aafeb19514fc5d39454096e

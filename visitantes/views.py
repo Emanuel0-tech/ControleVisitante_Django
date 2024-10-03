@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.shortcuts import redirect, render
 from django.contrib import messages
 from visitantes.forms import VisitanteForm
@@ -25,3 +26,8 @@ def registrar_visitante(request):
     }
     
     return render(request,'registrar_visitante.html',context)
+=======
+from django.shortcuts import render
+
+# Create your views here.
+>>>>>>> 259bea34cf67988f3aafeb19514fc5d39454096e

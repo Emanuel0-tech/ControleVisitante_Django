@@ -9,6 +9,10 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
+<<<<<<< HEAD
+=======
+
+>>>>>>> 259bea34cf67988f3aafeb19514fc5d39454096e
 import os
 from pathlib import Path
 
@@ -20,7 +24,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+<<<<<<< HEAD
 SECRET_KEY = 'django-insecure-$ejos=@l-^nyvo2speb-@*))6a1-dxe6%@ja*)ib8k#5hu&+7j'
+=======
+SECRET_KEY = 'django-insecure-7-@s!^(d(nndb_n^c(1nw2+s7b$uw4*oh702_x9ihms7!oaomx'
+>>>>>>> 259bea34cf67988f3aafeb19514fc5d39454096e
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -43,7 +51,10 @@ INSTALLED_APPS += [
     'usuarios',
     'porteiros',
     'visitantes',
+<<<<<<< HEAD
     'widget_tweaks'
+=======
+>>>>>>> 259bea34cf67988f3aafeb19514fc5d39454096e
 ]
 
 MIDDLEWARE = [
@@ -89,7 +100,10 @@ DATABASES = {
 
 AUTH_USER_MODEL = 'usuarios.Usuario'
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 259bea34cf67988f3aafeb19514fc5d39454096e
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
@@ -127,15 +141,23 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
+<<<<<<< HEAD
     os.path.join(BASE_DIR,'static')
+=======
+    os.path.join(BASE_DIR, 'static')
+>>>>>>> 259bea34cf67988f3aafeb19514fc5d39454096e
 ]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
+<<<<<<< HEAD
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'index'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+=======
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+>>>>>>> 259bea34cf67988f3aafeb19514fc5d39454096e
